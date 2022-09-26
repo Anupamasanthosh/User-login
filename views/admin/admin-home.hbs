@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/admin-home">Admin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/edit-user">Edit Users</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/create-user"> Create User</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/logout"> <button onclick="logout()" type="button" class="btn btn-primary">Logout</button></a>
+        </li>
+        
+        <script>
+          function logout()
+          {
+            alert("Logout Successfully")
+          }
+        </script>
+      </ul>
+      <form class="d-flex" role="search" action="/admin-home">
+        <input class="form-control me-2" name="search" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<section>
+    <table class="table caption-top">
+
+  <caption><h3>Users List</h3></caption>
+  <thead>
+    <tr>
+      
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Number</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+   {{#each user}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.number}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+</section>

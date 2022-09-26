@@ -1,0 +1,41 @@
+<div class="container">
+<section>
+
+    <table class="table caption-top">
+
+  <caption><h3>Users List</h3></caption>
+  <thead>
+    <tr>
+      
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Number</th>
+      <th scope="col">Edit/Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     {{#each user}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.number}}</td>
+      
+    
+      <td><a href="/edit-users/{{this._id}}"><button type="button" class="btn btn-light">Edit</button></a>&nbsp;&nbsp;
+      <span><form action="/delete-users/{{this._id}}?_method=delete" method="post">
+      <button type="submit" onclick="logOut()" class="btn btn-dark">Delete</button></span></td>
+      </form>
+    </tr>
+     {{/each}}
+     <script>
+      function logOut()
+      {
+        prompt(Are you sure ...?)
+      }
+     </script>
+    
+  </tbody>
+</table>
+</section>
+</div>
