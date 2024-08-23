@@ -50,58 +50,23 @@ To run the application locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/your-repository.git
-
-To run the application locally:
-
-1. Navigate to the project directory:
+   
+2. Navigate to the project directory:
    ```bash
    cd your-repository
+   
+3. Install the dependencies:
+   ```bash
+   npm install
 
-2. Install the dependencies:
-  ```bash
-  npm install
+4. Configure environment variables:
+   Create a .env file in the root directory and add the necessary configuration:
+    ```bash
+    MONGO_URI=your_mongodb_connection_string
+    SESSION_SECRET=your_session_secret
+    
+5. Start the application:
+   ```bash
+   npm start
 
-3. Configure environment variables:
-  Create a .env file in the root directory and add the necessary configuration:
-
-  MONGO_URI=your_mongodb_connection_string
-  SESSION_SECRET=your_session_secret
-
-4. Start the application:
-  ```bash
-  npm start
-
-## 🖥️ Usage
-
-User Login: Navigate to /login to log in or register.
-
-Admin Portal: Access the admin portal at /admin to manage users.
-
-
-##🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-
-Fork the project.
-Create your feature branch:
-bash
-Copy code
-git checkout -b feature/AmazingFeature
-Commit your changes:
-bash
-Copy code
-git commit -m 'Add some AmazingFeature'
-Push to the branch:
-bash
-Copy code
-git push origin feature/AmazingFeature
-Open a pull request.
-📄 License
-This project is open-source and available under the MIT License.
-
-📬 Contact
-If you have any questions, suggestions, or want to collaborate on a project, feel free to reach out.
-
-Name: Your Name
-GitHub: yourusername
-LinkedIn: LinkedIn Profile
-Email: Your Email Address
+      
