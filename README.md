@@ -12,7 +12,6 @@ A web application built to learn and implement session management, user authenti
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
-- [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
@@ -69,4 +68,26 @@ To run the application locally:
    ```bash
    npm start
 
-      
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the project.
+2. Create your feature branch: `git checkout -b feature/AmazingFeature`.
+3. Commit your changes: `git commit -m 'Add some AmazingFeature'`.
+4. Push to the branch: `git push origin feature/AmazingFeature`.
+5. Open a pull request.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+## 📬 Contact
+
+If you have any questions, suggestions, or want to collaborate on a project, feel free to reach out.
+
+- **Name**: Anupama Santhosh
+- **GitHub**: [anupamasanthosh](https://github.com/anupamasanthosh)
+- **LinkedIn**: [Anupama Santhosh](https://www.linkedin.com/in/anupama-k-bb5b03219/)
+- **Email**: [Mail me](mailto:anupamasanthosh730@gmail.com)
+     
